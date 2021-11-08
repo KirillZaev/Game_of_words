@@ -1,0 +1,13 @@
+{% load static %}
+<header>
+  <ul>
+    <li><a href="{% url 'instruction' %}"><i class="fa fa-home fa-fw"></i>Правила</a></li>
+    <li><a href="{% url 'add' %}">Добавить слово</a></li>
+    <li><a href="{% url 'topic' %}">Играть</a></li>
+  </ul>
+  <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</header>
+
+{% block content %}
+{% endblock content%}
+

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Выберите тему </h1>
+<a href="{% url 'game' 1 %}"> Растения </a><br/>
+<a href="{% url 'game' 2 %}"> Животные </a><br/>
+<a href="{% url 'game' 3 %}"> Города </a><br/>
+<a href="{% url 'game' 4 %}"> Имена </a><br/>
+<a href="{% url 'game' 5 %}"> Рандом </a><br/>
+{% endblock content %}

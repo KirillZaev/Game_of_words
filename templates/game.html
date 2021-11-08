@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>{{ word }}</h3>
+<form action="{%url 'start_game'%}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="word"><br/><br/>
+    <button type="submit">Ответить</button>
+</form>
+<a href="{% url 'lose' %}"> Я не знаю </a>
+{% endblock content %}

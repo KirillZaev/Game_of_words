@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1> Добавление нового слова </h1>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp; Для добавления слова впишите его в поле ввода полностью в нижнем регистре.<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp; В поле с последней буквой не вводите ь, ъ, ы, й, вместо них введите букву,
+        которая стоит перед ними</h2>
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Сохранить" />
+        </form>
+{% endblock content %}
